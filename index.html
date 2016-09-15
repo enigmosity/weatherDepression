@@ -14,18 +14,32 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <title>WeatherDepression</title>
+
     </head>
 
     <body>
+        <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+                fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
         <div align="center">
-        <h1 id="thing"> Prepare for the Weather! </hi>
+        <h1> Prepare for the Weather! </hi>
         <h2 id="page-header">Find yourself feeling down on rainy days, but loving life on a beautiful bluebird? Check here before getting out of bed so you can plan your day!</h2>
         <p> Simply type in your city, and we'll let you know if you're better off tucking yourself back in to hibernate the day away</p>
         <div class="form-group">
             <label for="usr">City:</label>
             <input type="text" class="form-control" id="textfield">
         </div>
-        <button type="button" class="btn btn-default" id="weatherbtn" onclick="getWeather()" align=>Tell me how to feel</button> 
+        <button type="button" class="btn btn-default" id="weatherbtn" onclick="getWeather()" align='centre' item-width="auto">Tell me how to feel</button> 
         </div>
+        <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fweatherdepression.azurewebsites.net%2F&layout=button_count&size=small&mobile_iframe=true&width=68&height=20&appId" width="68" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
         <a href="https://www.yahoo.com/?ilc=401" target="_blank"> <img src="https://poweredby.yahoo.com/purple.png" width="134" height="29"/> </a>
+        <p>Built by Matt Simpson, September 2016</p>
+       
     </body>
