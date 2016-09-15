@@ -20,7 +20,6 @@ function getText(warmth, text) {
     else {
         var toWrite = "There's something random going on here, you'll have to make these decisions for yourself on this one";
     }
-    alert(toWrite);
     return toWrite;
 }
 function getWarmth(temp) {
@@ -55,17 +54,13 @@ function getWeather() {
     $.get(callPiece, function (data) {
         if (data == null) {
             var message = "There seems to be a problem with " + textfield + ". Try another location.";
-            alert(message);
         }
         else {
             var wind = data.query.results.channel.wind;
             //var condition = data.query.results.channel.condition;
             var text = data.query.results.channel.item.condition.text;
-            alert(text);
             var temp = data.query.results.channel.item.condition.temp;
-            alert(+temp);
             var warmth = getWarmth(Number(temp));
-            alert(warmth);
             var toWrite = getText(warmth, text);
             changeUserInterface(textfield, temp, toWrite);
         }
