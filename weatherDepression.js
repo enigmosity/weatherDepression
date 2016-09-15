@@ -1,7 +1,3 @@
-var pageheader = $("#page-header")[0];
-var pagecontainer = $("#page-container")[0];
-//city = textfield.value;
-//alert("test");
 function getText(warmth, text) {
     if (warmth == "Roasting" && text == "Sunny") {
         var toWrite = "It's likely to get you down simply because you'll feel like you're being roasted. Go down to the store, buy a bag of ice, dump it all in your bath and wait out the day. ";
@@ -50,8 +46,6 @@ function getWarmth(temp) {
 }
 function changeUserInterface(city, info, text) {
     document.getElementById("page-header").innerHTML = "<p id='page-header'>" + city + " is " + info + " degrees celsius. " + text + "</p>";
-    //
-    pagecontainer.innerHTML = "Change"; //city + "is" + info + "degrees fahrenheit today." + text;
 }
 function getWeather() {
     var start = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22";

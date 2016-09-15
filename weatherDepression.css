@@ -1,12 +1,14 @@
-#thing {
-    background-color: red; 
-}
-
-#page-container {
-    background-color: blue;
+html {
+    background-image: url("orca.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-color: #C0C0C0;
 }
 
 body {
-    background-image: url("orca.jpeg");
-    background-color: #C0C0C0;
+    background-color: transparent;
+}
+
+
+div {
+    background-color: transparent;
 }

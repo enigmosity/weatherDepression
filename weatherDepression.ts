@@ -2,12 +2,7 @@
 
 
 
-var pageheader = $("#page-header")[0];
-var pagecontainer = $("#page-container")[0];
 
-
-//city = textfield.value;
-//alert("test");
 
 function getText(warmth, text) {
     if (warmth == "Roasting" && text == "Sunny") {
@@ -47,10 +42,7 @@ function getWarmth(temp) {
 }
 
 function changeUserInterface(city, info, text) {
-    (<HTMLInputElement>document.getElementById("page-header")).innerHTML = "<p id='page-header'>" + city + " is " + info + " degrees celsius. " + text + "</p>";
-    //
-    pagecontainer.innerHTML = "Change"; //city + "is" + info + "degrees fahrenheit today." + text;
-    
+    (<HTMLInputElement>document.getElementById("page-header")).innerHTML = "<p id='page-header'>" + city + " is " + info + " degrees celsius. " + text + "</p>";   
 }
 
 
