@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="weatherDepression.css">
+        <script src="weatherDepression.js"></script>
+        <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div align="center">
+        <h1 id="thing"> Prepare for the Weather! </hi>
+        <h2 id="page-header">Find yourself feeling down on rainy days, but loving life on a beautiful bluebird? Check here before getting out of bed so you can plan your day!</h2>
+        <p> Simply type in your city, and we'll let you know if you're better off tucking yourself back in to hibernate the day away</p>
+        <div class="form-group">
+            <label for="usr">City:</label>
+            <input type="text" class="form-control" id="textfield">
+        </div>
+        <button type="button" class="btn btn-default" id="weatherbtn" onclick="getWeather()" align=>Tell me how to feel</button> 
+        </div>
+        <a href="https://www.yahoo.com/?ilc=401" target="_blank"> <img src="https://poweredby.yahoo.com/purple.png" width="134" height="29"/> </a>
+        <div> <p id="page-container"> Please just work </p> </div>
+    </body>
