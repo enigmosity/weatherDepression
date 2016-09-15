@@ -1,5 +1,5 @@
 html {
-    background-image: url("orca.jpg") no-repeat center center fixed;
+    background-image: url("orca.jpg"); 
     background-size: cover;
     background-color: #C0C0C0;
 }
